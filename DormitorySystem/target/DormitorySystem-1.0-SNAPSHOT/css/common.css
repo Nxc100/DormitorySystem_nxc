@@ -1,0 +1,130 @@
+/* 通用样式 */
+body {
+  margin: 0;
+  font-family: 'Microsoft YaHei', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* 头部样式 */
+.header {
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header.admin {
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+}
+
+.system-title {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.system-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 容器样式 */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* 仪表板网格样式 */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* 卡片样式 */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-title i {
+  margin-right: 0.5rem;
+}
+
+/* 按钮样式 */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #1e88e5;
+}
+
+.btn-primary:hover {
+  background-color: #1565c0;
+}
+
+.btn-success {
+  background-color: #2e7d32;
+}
+
+.btn-success:hover {
+  background-color: #1b5e20;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* 用户信息样式 */
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  color: #333;
+}
